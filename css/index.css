@@ -1,0 +1,97 @@
+.jumbotron {
+    background-color: #334ddf;
+    color: #FFFFFF;
+}
+
+footer {
+    text-align: center;
+    color: #666;
+    border-top: 1px solid;
+    padding-top: 30px;
+}
+
+#floor_0 {
+    z-index: 0;
+}
+
+.lottery_btn {
+    z-index: 1;
+    color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 999em;
+    position: absolute;
+    top: 280px;
+    left: 295px;
+}
+
+#reset,
+#show_roulette,
+#ok,
+#start,
+#manual {
+    margin-bottom: 10px;
+}
+
+option[default*=true] {
+    background: #82f5e5;
+}
+
+option[default*=false] {
+    background: #f78de5;
+}
+
+.delete_btn {
+    position: absolute;
+    right: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.speed_up_btn {
+    z-index: 1;
+    /* border-radius: 999em; */
+    position: absolute;
+    top: 450px;
+    left: 570px;
+}
+
+.speed_down_btn {
+    z-index: 1;
+    /* border-radius: 999em; */
+    position: absolute;
+    top: 550px;
+    left: 570px;
+}
+
+.refresh_btn {
+    z-index: 1;
+    /* border-radius: 999em; */
+    position: absolute;
+    top: 400px;
+    left: 570px;
+}
+
+.stop_btn {
+    z-index: 1;
+    /* border-radius: 999em; */
+    position: absolute;
+    top: 500px;
+    left: 570px;
+}
+
+#default {
+    background-color: #82f5e5;
+}
+
+#new {
+    background-color: #f78de5;
+}
+
+.gift_invisible {
+    display: none
+}
+
+center {
+    margin-bottom: 50px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8 ">
+    <meta name="viewport " content="width=device-width, initial-scale=1.0 ">
+    <meta http-equiv="X-UA-Compatible " content="ie=edge ">
+    <title>manual </title>
+
+    <!-- 引用 Bootstrap 的 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- 引用 Google 中文字型 -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC&display=swap" rel="stylesheet">
+
+    <!-- 引用 font-awesome ICON 的 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- 引用自己定義的CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- 自定義的img css -->
+
+</head>
+
+
+<center>
+    <div class="row">
+        <div class="col">
+            <div class="jumbotron">
+                <h1 class="display-4">使用說明</h1>
+            </div>
+        </div>
+    </div>
+    <h2>1.樂透成員輸入</h2>
+    <table>
+        <li>透過輸入資料來新增樂透成員，<span id="default">預設抽獎資料</span>和<span id="new">新增抽獎資料</span>的差別在於，若按下<button id="reset" class=" btn btn-danger"> 重新設定</button> ，預設成員不會刪除而新增成員會刪除</li>
+        <li>輸入時可以透過按enter或是按送出來新增，如果想要一次輸入多個成員，可以在兩個輸入資料間放入 "," 或是 ";" 或是 " " </li>
+    </table>
+    <h2>2.樂透成員刪除</h2>
+    <table>
+        <li>可以在下面選單找到想要刪除的成員，點選後按下右上方的<button class="btn btn-danger " id="delete">x</button></li>
+        <li>若想要刪除多個成員，可以用crtl加上滑鼠來選取多個目標</li>
+        <li>快速搜尋請按crtl-f or f3 搜尋關鍵字</li>
+    </table>
+    <h2>3.預設轉盤</h2>
+    <table>
+        <li>點選<button id="show_roulette" class=" btn btn-primary"> 預覽</button>可以看到左方出現目前轉盤模樣</li>
+        <li>點下<button id="refresh" class="btn  btn-dark"><i class="fas fa-sync"></i></button>會更改增加的成員至大轉盤</li>
+        <li>點下大轉盤中間圓形<button id="go" class="">go</button>大轉盤開始旋轉，可以開始設定轉盤速度</li>
+        <li>點下<button class="btn btn-danger " id="up"><i class="fas fa-arrow-circle-up"></i></button>會增加速度， 點下
+            <button id="stop" class="btn  btn-secondary"><i class="far fa-stop-circle"></i></button>來停止轉盤 點下
+            <button class="btn btn-primary " id="down"><i class="fas fa-arrow-circle-down"></i></button>來較低速度
+        </li>
+        <li>設定完成之後，按下<button id="ok" class=" btn btn-info"> 設定完成</button>來完成設定</li>
+    </table>
+    <h2>4.開始抽獎</h2>
+    <table>
+        <li>按下<button id="start" class="btn btn-warning">開始抽獎</button>後，輪盤開始旋轉</li>
+        <li>抽獎方式類似丟飛鏢，點選大輪盤後即抽到獎品</li>
+        <li>抽到後會顯示中獎文字，如果想要繼續抽的話，那又點選<button id="continue" class="btn btn-warning">繼續抽獎</button> 如過想要重新，請點選
+            <button id="reset" class=" btn btn-danger"> 重新設定</button>
+        </li>
+        <li>大輪盤判斷方法玩判定點選顏色，而非數學方法來判定，若是抽到無法判定的區域，代表按到了邊緣地帶或是字體，目前無法除理這部分，所以抽到就麻煩重抽了喔</li>
+    </table>
+</center>
+
+
+<!-- 引用 Bootstrap 的 JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+</body>
+
+</html>
